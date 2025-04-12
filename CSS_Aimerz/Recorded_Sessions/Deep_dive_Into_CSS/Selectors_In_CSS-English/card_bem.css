@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BEM Architecture */
+
+/* Block */
+.card {
+    background-color: #add8e6;
+    color: #333;
+    padding: 3rem;
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem #ed0a0a;
+}
+
+/* Element */
+.card-title {
+    font-size: 1.875rem;
+    margin: 0 0 1rem 0;
+}
+
+.card-text {
+    font-size: 1.25rem;
+    color: #00008b;
+    margin: 0 0 1rem 0;
+    /* margin-bottom: 16px; */
+}
+
+.card-button {
+    color: #fefefe;
+    background-color: #333;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.3125rem;
+}
+
+/* Modifier */
+.card-button-highlighted:hover {
+    color: #fefefe;
+    background-color: #ed0a0a;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 728px) {
+    .card-featured {
+        background-color: #08201a;
+        color: #fff;
+        padding: 3rem;
+        width: 60%;
+        margin: auto;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.125rem 0.25rem #ed0a0a;
+    }
+
+    .card-text {
+        color: #fefefe;
+    }
+
+    .card-button-highlighted {
+        background-color: rgb(144, 144, 13);
+    }
+
+    .card-button-highlighted:hover {
+        background-color: #ed0a0a;
+    }
+}

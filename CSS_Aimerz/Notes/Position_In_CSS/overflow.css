@@ -1,0 +1,12 @@
+div {
+    border: 3px solid red;
+    width: 16rem;
+    height: 16rem;
+    overflow: hidden;
+}
+
+/* p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+} */

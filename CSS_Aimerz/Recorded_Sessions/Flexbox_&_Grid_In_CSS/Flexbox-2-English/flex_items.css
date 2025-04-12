@@ -1,0 +1,54 @@
+.parent {
+    background-color: orangered;
+    padding: 16px;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-1 {
+    background-color: aqua;
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.child-2 {
+    background-color: rgb(15, 215, 39);
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    align-self: flex-start;
+}
+
+.child-3 {
+    background-color: rgb(231, 74, 171);
+    border: 2px solid;
+    height: 100px;
+    padding: 10px;
+    order: 3;
+    flex: 0 0 500px;
+}
+
+.child-4 {
+    background-color: rgb(78, 70, 223);
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    order: 2;
+}
+
+.child-5 {
+    background-color: rgb(183, 255, 0);
+    border: 2px solid;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    order: 1;
+}

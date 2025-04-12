@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1200px;
+    background: #ff3333 url("./images/my_pic.jpg") no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div {
+    background-color: hsla(0, 100%, 50%, 0);
+}
+
+div p {
+    padding: 1rem;
+    text-align: center;
+}
+
+.unique {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,10 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: opacity 1s ease 1s;
+}
+
+div:hover {
+    opacity: 0.5;
+}

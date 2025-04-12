@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 1rem;
+    padding: 1.875rem;
+    border: solid;
+}
+
+.boxOne {
+    border-color: #f00;
+}
+
+.boxTwo {
+    /* border-top-color: #0f0;
+    border-right-color: #f00;
+    border-bottom-color: #00f;
+    border-left-color: #ffc0cb; */
+    border-color: #0f0 #f00 #00f #ffc0cb;
+}

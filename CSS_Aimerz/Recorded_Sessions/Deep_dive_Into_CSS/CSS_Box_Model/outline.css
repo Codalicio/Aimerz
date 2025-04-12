@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f08080;
+}
+
+div {
+    margin: 1.9rem 1rem;
+    padding: 1rem;
+    background-color: #88fd88;
+    border: 0.3125rem solid #ff0eee;
+}
+
+/* outline-style */
+.solid {
+    outline-style: solid;
+}
+
+.dotted {
+    outline-style: dotted;
+}
+
+.dashed {
+    outline-style: dashed;
+}
+
+.double {
+    outline-style: double;
+}
+
+.groove {
+    outline-style: groove;
+}
+
+.ridge {
+    outline-style: ridge;
+}
+
+.inset {
+    outline-style: inset;
+}
+
+.outset {
+    outline-style: outset;
+}
+
+.none {
+    outline-style: none;
+}
+
+/* outline-color */
+.outlineColor {
+    outline-style: solid;
+    outline-color: #00f;
+}
+
+/* outline-width */
+.thin {
+    outline-style: solid;
+    outline-width: thin;
+}
+
+.thick {
+    outline-style: solid;
+    outline-width: thick;
+}
+
+.medium {
+    outline-style: solid;
+    outline-width: medium;
+}
+
+.specificSize {
+    outline-style: solid;
+    outline-width: 0.5625rem;
+}
+
+/* outline-offset */
+.offset {
+    outline-style: solid;
+    outline-offset: 0.4375rem;
+}
+
+/* outline shorthand */
+.three {
+    outline: 0.4375rem solid #008000;
+}
+
+.two {
+    outline: 0.4375rem outset;
+    color: blueviolet;
+}
+
+.one {
+    outline: double;
+}

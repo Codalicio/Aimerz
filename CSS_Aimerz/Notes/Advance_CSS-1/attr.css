@@ -1,0 +1,32 @@
+[class~="first"] {
+    color: red;
+}
+
+[class^="first"] {
+    background-color: lightgreen;
+}
+
+[href$="com"] {
+    color: black;
+}
+
+[href*="www"] {
+    background-color: aqua;
+}
+
+.first::after {
+    content: " Amit Raj.";
+    color: #f0f0f0;
+    background-color: brown;
+}
+
+.child-2::before {
+    color: darkgreen;
+    content: 'Added using ::before - pseudo-element. ';
+}
+
+div p::selection, div a::selection {
+    background-color: #333;
+    color: #f0f0f0;
+}
+

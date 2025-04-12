@@ -1,0 +1,20 @@
+body {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    animation-name: auto-color-change;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    /* animation: auto-color-change 5s ease-out 1s infinte; */
+}
+
+@keyframes auto-color-change{
+    0%{background-color: orange;}
+    25%{background-color: red; text-align: center; color: #f0f0f0;}
+    50%{background-color: green; text-align: left;}
+    75%{background-color: blue; text-align: right;}
+    100%{background-color: darkmagenta; text-align: center;}
+}

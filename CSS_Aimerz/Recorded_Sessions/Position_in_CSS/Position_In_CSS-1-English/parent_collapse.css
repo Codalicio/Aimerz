@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    background-color: tomato;
+    border: 8px solid green;
+}
+
+img {
+    width: 20vw;
+    height: 20vh;
+    padding: 1rem;
+    float: right;
+}

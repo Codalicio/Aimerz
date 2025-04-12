@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    background-color: red;
+    padding: 3rem;
+    border: 0.5rem solid #fff;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+p {
+    color: #fff;
+    /* text-align: center; */
+    background-color: blue;
+    width: 90%;
+    padding: 0.5rem;
+    margin: auto;
+    text-align: center;
+    border: 0.3125rem solid #fefefe;
+    border-radius: 0.5rem;
+    
+}

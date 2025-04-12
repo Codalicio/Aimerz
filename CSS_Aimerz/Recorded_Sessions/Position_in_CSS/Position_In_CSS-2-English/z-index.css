@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 75vw;
+    height: 100vh;
+    background-color: lightgrey;
+    position: relative;
+}
+
+.one {
+    width: 160px;
+    height: 180px;
+    background-color: darkblue;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 80px;
+    top: 95px;
+    z-index: 3;
+}
+
+.two {
+    width: 160px;
+    height: 180px;
+    background-color: darkgreen;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.three {
+    width: 160px;
+    height: 180px;
+    background-color: darkred;
+    position: absolute;
+    top: 180px;
+    left: 170px;
+    z-index: 4;
+}

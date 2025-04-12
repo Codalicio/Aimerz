@@ -1,0 +1,97 @@
+/* Block */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #ea0505;
+    padding: 0.625rem;
+    color: #fefefe;
+    border-radius: 0 0 0.625rem 0.625rem;
+}
+
+.pricing {
+    background-color: lightgray;
+    padding: 0.625rem;
+    margin: 1.25rem;
+    border-radius: 0.3125rem;
+    box-shadow: 1px 1px 9px #ea0505;
+}
+
+footer {
+    margin: 1.3125rem 0 0 0;
+    background-color: #333;
+    color: #d3d3d3;
+    padding: 0.3125rem;
+    border: 0.25rem solid #ea0505;
+    border-radius: 0.625rem 0.625rem 0 0;
+    font-size: 0.7rem;
+}
+
+/* Element */
+header h1, section h2 {
+    text-decoration: overline underline;
+    line-height: 6rem;
+    background-color: blue;
+    color: #fefefe;
+    text-decoration-style: wavy;
+}
+
+section h2 {
+    text-decoration-style: dotted;
+}
+
+.pricing p {
+    margin-bottom: 3rem;
+}
+
+.old-price {
+    margin: 1.25rem;
+    font-size: 0.9rem;
+}
+
+.discounted-price {
+    margin: 1.25rem;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-color: #494902;
+}
+
+.limited-offer {
+    margin: 1.25rem;
+    font-size: 1.2rem;
+}
+
+.old-price span {
+    color: darkblue;
+    text-decoration: line-through;
+    text-decoration-color: #ea0505;
+    font-size: 1.2rem;
+}
+
+.discounted-price span {
+    background-color: #494902;
+    color: #fefefe;
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
+    text-decoration: underline;
+}
+
+.limited-offer a {
+    text-decoration: none;
+    color: #f0f0f0;
+    background-color: #333;
+    padding: 0.25rem;
+    border-radius: 0.3125rem;
+
+}
+
+/* Modifier */
+.limited-offer a:hover {
+    background-color: #ea0505;
+    box-shadow: 0.125rem 0.125rem 0.1875rem #333;
+}

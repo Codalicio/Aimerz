@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #d3d3d3;
+}
+
+div {
+    border: 2px solid #f11000;
+    border-radius: 7px;
+}
+
+.elementOne {
+    margin: 10px 20px;
+}
+
+.elementTwo {
+    margin: 20px 30px 40px;
+}
+
+.elementThree {
+    margin: 48px;
+}

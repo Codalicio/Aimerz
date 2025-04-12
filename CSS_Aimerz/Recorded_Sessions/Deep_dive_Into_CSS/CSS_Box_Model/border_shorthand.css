@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #d3d3d3;
+    color: #ff00ce;
+}
+
+.box {
+    border: 7px solid #9acd32;
+    border-radius: 7px;
+    text-decoration: underline overline line-through;
+    text-decoration-color: #fefefe;
+    font: italic small-caps bolder 2rem/1.5rem 'Verdana', sans-serif;
+}

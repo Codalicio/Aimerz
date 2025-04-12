@@ -1,0 +1,22 @@
+/* Module : button component */
+.button {
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+
+/* State : Different visual states */
+.is-primary {
+    background-color: #00f;
+    color: #f0f0f0;
+}
+
+.is-secondary {
+    background-color: #808080;
+    color: #fefefe;
+}
+
+.is-disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}

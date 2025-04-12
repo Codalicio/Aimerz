@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.one {
+    width: 50vw;
+    height: 50vh;
+    background-color: cyan;
+}
+
+.two {
+    width: 50vmax;
+    height: 62.5vmax;
+    background-color: lightgreen;
+}

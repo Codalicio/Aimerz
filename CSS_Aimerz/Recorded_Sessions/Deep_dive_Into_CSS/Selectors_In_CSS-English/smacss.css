@@ -1,0 +1,128 @@
+/* Base Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a52a2a;
+    color: #fefefe;
+}
+
+/* Layout Style | Headers, Footer, Main, Article, Sections, Sidebars */
+.header {
+    background-color: #d3d3d3;
+    color: #080101;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem;
+}
+
+.header-logo {
+    font-size: 2.5rem;
+}
+
+.header nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+}
+
+main {
+    background-color: #fff;
+    padding: 2rem;
+    border: 10px outset #3636a0;
+    border-radius: 0.4375rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Module | Reusable Components */
+.button {
+    background-color: #a52a2a;
+    color: #f0f0f0;
+    padding: 0.3125rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border: 0.25rem solid #3636a0;
+    border-radius: 0.4375rem;
+    box-shadow: 0.5rem 0.375rem #78d378;
+    cursor: pointer;
+}
+
+.nav-items {
+    text-decoration: none;
+    color: #080101;
+}
+
+/* State | How elements behave in certain states, like when hovered */
+.button:hover {
+    background-color: #080101;
+    color: #f0f0f0;
+    border: 0.25rem solid;
+    border-radius: 0.7rem;
+}
+
+.button:active {
+    background-color: #f00;
+}
+
+
+/* Theme | It allows us to change the look and feel of the components */
+.theme-dark {
+    background-color: #080101;
+    color: #fefefe;
+}
+
+.theme-dark .header {
+    background-color: #080101;
+    color: #f0f0f0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem;
+}
+
+.theme-dark .nav-items {
+    color: #f0f0f0;
+}
+
+.theme-dark main {
+    background-color: #333;
+    padding: 2rem;
+    border: 10px outset #f0f0f0;
+    border-radius: 0.4375rem;
+    display: flex;
+    justify-content: center;
+}
+
+.theme-dark .button {
+    background-color: #a52a2a;
+    color: #f0f0f0;
+    padding: 0.3125rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border: 0.25rem solid #f0f0f0;
+    border-radius: 0.4375rem;
+    box-shadow: 0.5rem 0.375rem #78d378;
+    cursor: pointer;
+}
+
+.theme-dark .button:hover {
+    background-color: #080101;
+    color: #f0f0f0;
+    border: 0.25rem solid;
+    border-radius: 0.7rem;
+}
+
+.theme-dark .button:active {
+    background-color: #00f;
+}
+

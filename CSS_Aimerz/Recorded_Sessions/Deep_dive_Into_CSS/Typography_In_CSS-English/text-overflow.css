@@ -1,0 +1,28 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+.a {
+    background-color: lightgrey;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.b {
+    background-color: lightgrey;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Should not be used on any other browser except Mozilla Firefox : */
+.c {
+    background-color: lightgrey;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "--------";
+}

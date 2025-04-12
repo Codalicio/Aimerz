@@ -1,0 +1,19 @@
+img {
+    width: 25vw;
+    height: 25vh;
+}
+
+#img-1 {
+    float: right;
+    clear: right;
+}
+
+#img-2 {
+    float: right;
+    clear: right;
+}
+
+#img-3 {
+    float: right;
+    clear: right;
+}

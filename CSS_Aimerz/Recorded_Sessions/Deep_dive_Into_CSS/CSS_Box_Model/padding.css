@@ -1,0 +1,23 @@
+div {
+    border: 0.125rem solid;
+    margin: 1.25rem;
+    text-align: center;
+}
+
+.content-1 {
+    background-color: #add8e6;
+    padding-top: 0.9375rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.9375rem;
+    padding-left: 1.25rem;
+}
+
+.content-2 {
+    background-color: #90ee90;
+    padding: 0.9375rem 3rem 0.625rem;
+}
+
+.content-3 {
+    background-color: #d3d3d3;
+    padding: 3rem;
+}

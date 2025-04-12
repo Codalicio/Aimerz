@@ -1,0 +1,16 @@
+span {
+    background-color: yellow;
+    display: inline-block;
+    border: 0.1875rem solid red;
+    padding: 1rem;
+}
+
+.minHeight {
+    min-height: 4rem;
+}
+
+.maxHeight {
+    max-height: 4rem;
+    overflow: auto;
+}
+

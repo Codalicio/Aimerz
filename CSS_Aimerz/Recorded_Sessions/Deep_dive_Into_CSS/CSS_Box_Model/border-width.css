@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid #ff0000;
+    border-radius: 0 0 0.625rem 0.625rem;
+}
+
+div {
+    margin: 3.125rem;
+    padding: 1.5rem;
+}
+
+.thin {
+    background-color: #d3d3d3;
+    border-width: thin;
+}
+
+.medium {
+    background-color: #add8e6;
+    border-width: medium;
+}
+
+.thick {
+    background-color: #90ee90;
+    border-width: thick;
+}
+
+.unitValue {
+    background-color: #f08080;
+    border-top-width: 1.25rem;
+    border-right-width: 1.875rem;
+    border-bottom-width: 0.4375rem;
+    border-left-width: 0.625rem;
+    border-width: 1.25rem 1.875rem 0.4375rem 0.625rem;
+}

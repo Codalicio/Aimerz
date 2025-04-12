@@ -1,0 +1,70 @@
+:root {
+    --primary-color: orange;
+    --secondary-color: rgb(49, 3, 49);
+}
+
+html {
+    font-size: 20px;
+}
+
+div p{
+    color: green;
+}
+
+div > p {
+    color: red;
+}
+
+section + p {
+    color: blue;
+}
+
+section ~ p {
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 1rem;
+}
+
+[class="text"] {
+    background-color: darkred;
+}
+
+[class*='text'] {
+    background-color: darkred;
+}
+
+p::after {
+    content: 'Amit Raj';
+}
+
+p::before {
+    content: 'Hello, ';
+}
+
+p::first-letter {
+    font-size: 3rem;
+}
+
+p::first-line {
+    font-size: 1.5rem;
+}
+
+li::marker {
+    color: crimson;
+    font-size: 2rem;
+}
+
+p::selection {
+    color: red;
+    background-color: lightgreen;
+}
+
+li::after {
+    content: ""attr(name)"";
+}
+
+li {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}

@@ -1,0 +1,16 @@
+* For applying 'margin: auto;' the 'width' property should be pre-defined.
+
+* CSS naming convention leads to :
+1. Consistency
+2. Readability
+3. Maintainability
+4. Collaborations
+5. Lesser confusion
+6. Predictability
+7. Reusability and long-term efficiency
+
+* CSS Naming Conventions are of three types :
+1. BEM(Block, Element, Modifier)
+2. SMACSS(Scalable and Modular Architecture for CSS)
+3. OOCSS(Object-oriented CSS)
+

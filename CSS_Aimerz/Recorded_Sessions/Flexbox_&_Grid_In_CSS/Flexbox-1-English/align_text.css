@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    background-color: red;
+    color: white;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

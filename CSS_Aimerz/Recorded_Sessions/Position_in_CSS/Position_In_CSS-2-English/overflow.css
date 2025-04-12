@@ -1,0 +1,15 @@
+div {
+    width: 200px;
+    /* height: 200px; */
+    border: 7px solid;
+    background-color: lightgreen;
+    padding: 1rem;
+    text-overflow: ellipsis;
+}
+
+div p {
+    white-space: nowrap;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    text-overflow: inherit;
+}

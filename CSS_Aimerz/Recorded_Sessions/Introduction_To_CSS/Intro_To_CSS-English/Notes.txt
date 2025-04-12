@@ -1,0 +1,97 @@
+* CSS is an acronym which is abbreviated to "Cascading Style Sheets".
+
+* CSS versions :
+1. CSS1(1996)
+2. CSS2
+3. CSS2.1(2004)
+4. CSS3
+
+------------------------------
+
+* CSS3 is a collection of smaller modules released independently. It introduced powerful new features like advanced selectors(for targeting elements), gradients(for color transitions), shadows, animations, transitions and much more. Modules include Selectors, Box-Model, Backgrounds, Borders, Text Effects and Transforms. 
+
+------------------------------
+
+* Anatomy Structure Of The CSS :
+
+
+    (propert name) (value)
+     |             |
+h1 {color: #00ff00; font-weight: bold;}     ----> (A CSS Rule)
+ |            |               |        |
+(selector) (Declaration) (Declaration) (Declaration Separator)
+      |__________________________|
+                   |
+            (Declaration Block)
+
+* Key components of the anatomy structure of CSS are :
+- Selectors
+- Properties
+- Value
+- Declaration
+- Rule
+
+------------------------------
+
+* Selectors are of different categories :
+- Basic selectors
+- Group selectors
+- Combinators
+- Pseudo-classes
+- Pseudo-elements
+
+-------------------------------
+
+* We can add CSS to HTML in three different ways :
+1. Inline CSS
+2. Internal CSS
+3. External CSS
+
+* Inline CSS :
+
+* Advantages :
+- It is simple and straight-forward.
+- It is easy to apply if we want to inject CSS on the go.
+
+* Challanges :
+- If we have a complex HTML code file with a large codebase, then using inline CSS will make the codebase more complex.
+- It will result into unnecessary code repitions, as suppose, if we have h1, h2, and h3, and we want to apply the same style to each one of those, then we have to inject CSS individually to get the desired result.
+
+* Internal CSS :
+
+* Advantages :
+- We will have centralized CSS code/styling.
+- It leads to reusability, as all the tags used as selectors will get the same style.
+- It is simple and a great choice for smaller websites.
+
+* Challanges :
+- It is not useful when dealing with complex bigger projects.
+- It's also not reusable across the pages.
+
+* External CSS :
+
+* Advantages :
+- It separates the content from the design or style.
+- As it is an external file, thus, it can be used with multiple HTML files.
+- It will provide more optimal performance, as the CSS file can be cached by the browser and will be used by the browser without loading it everytime.
+
+* Challanges :
+- It requires internet as suppose your website is hosted somewhere on a server, whenever it needs to load it requires an internet connection.
+- It will require multiple files, like one for the HTML and one for the CSS separately.
+
+* Cascading order in CSS(Inline, Internal and External) :
+1. Inline CSS(Highest Specificity) - 1000.
+2. Internal CSS and External CSS are depended on the order in which they are applied.
+
+-------------------------------------------
+
+* Comments in CSS :
+- Clarification
+- Organization
+- Temporarily disable code
+
+------------------------------------------
+
+* Note :
+- If we have multiple CSS rules for the same selector, then the one the comes later will be applied and the earlier one's will be overridden.
+
