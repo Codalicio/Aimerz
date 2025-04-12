@@ -57,3 +57,10 @@ console.log(tata);
 tata.carDetails();
 
 // -----------------------------------------------------------------------------------
+
+// * instanceof operator
+console.log(tata instanceof Car);
+console.log(bmw instanceof Car);
+console.log(tata instanceof Object);
+
+// -----------------------------------------------------------------------------------
