@@ -38,29 +38,72 @@
 
 // ---------------------------------------------------------------------------------------
 
-function Car(model, brand) {
-  this.model = model;
-  this.brand = brand;
-  this.carDetails = function () {
-    console.log(`I drive ${brand} ${model}.`);
-  };
-}
+// function Car(model, brand) {
+//   this.model = model;
+//   this.brand = brand;
+//   this.carDetails = function () {
+//     console.log(`I drive ${brand} ${model}.`);
+//   };
+// }
 
 // instance-1 of constructor function (Car) :
-const bmw = new Car("7-series", "BMW");
-console.log(bmw);
-bmw.carDetails();
+// const bmw = new Car("7-series", "BMW");
+// console.log(bmw);
+// bmw.carDetails();
 
 // instance-2 of constructor function (Car) :
-const tata = new Car("Tiago", "Tata");
-console.log(tata);
-tata.carDetails();
+// const tata = new Car("Tiago", "Tata");
+// console.log(tata);
+// tata.carDetails();
 
 // -----------------------------------------------------------------------------------
 
 // * instanceof operator
-console.log(tata instanceof Car);
-console.log(bmw instanceof Car);
-console.log(tata instanceof Object);
+// console.log(tata instanceof Car);
+// console.log(bmw instanceof Car);
+// console.log(tata instanceof Object);
 
 // -----------------------------------------------------------------------------------
+
+function Human(name, age, country) {
+  this.name = name;
+  this.age = age;
+  this.country = country;
+  this.giveDetails = function () {
+    console.log(
+      `Hi, my name is ${this.name}, I am ${this.age} years old, all the way from ${this.country}.`
+    );
+  };
+}
+
+const me = new Human("Amit", 28, "India");
+console.log(me);
+console.log(me.__proto__);
+me.giveDetails();
+
+console.log(Human.prototype);
+
+function constructorVariables() {
+  console.log(
+    `Name : ${this.name}, Age : ${this.age} and Country : ${this.country}.`
+  );
+}
+
+Human.prototype.constructorVariables = constructorVariables;
+
+console.log(Human.prototype);
+console.log(me.__proto__);
+me.constructorVariables();
+
+// ---------- Prototype Inheritance
+
+const Student = Object.create(me);
+console.log(Student);
+Student.name = "Robert";
+Student.age = 32;
+Student.country = "France";
+console.log(Student.__proto__);
+Student.giveDetails();
+Student.constructorVariables();
+
+// -----------------------------------------------------------------
