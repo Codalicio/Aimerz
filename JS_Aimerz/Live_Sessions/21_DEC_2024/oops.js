@@ -59,37 +59,65 @@
 // --------------------------------------------------------------------
 
 // * Inheritance and Polymorphism :
+// class Person {
+//   constructor(name, age, place, occupation) {
+//     this.name = name;
+//     this.age = age;
+//     this.place = place;
+//     this.occupation = "Unemployed";
+//   }
+//   sayDetails() {
+//     console.log(
+//       `Name : ${this.name}, Age : ${this.age}, Place : ${this.place} and Occupation : ${this.occupation}.`
+//     );
+//   }
+// }
+
+// class Student extends Person {
+//   constructor(name, age, place, grade) {
+//     super(name, age, place);
+//     this.occupation = "Student";
+//     this.grade = grade;
+//   }
+//   sayDetails() {
+//     console.log(
+//       `Student's Name : ${this.name}, having grade : ${this.grade} and Occupation : ${this.occupation}.`
+//     );
+//   }
+// }
+
+// const person1 = new Person("Amit", 29, "Bihar");
+// console.log(person1);
+// person1.sayDetails();
+
+// const student1 = new Student("Prabir", 19, "Orissa", 95);
+// console.log(student1);
+// student1.sayDetails();
+
+// -----------------------------------------------------------------
+
+// Abstraction :
 class Person {
-  constructor(name, age, place, occupation) {
-    this.name = name;
+  constructor(name, age, place) {
+    this._name = name;
     this.age = age;
     this.place = place;
-    this.occupation = "Unemployed";
   }
-  sayDetails() {
-    console.log(
-      `Name : ${this.name}, Age : ${this.age}, Place : ${this.place} and Occupation : ${this.occupation}.`
-    );
+
+  get getPersonName() {
+    return this._name;
+  }
+
+  set setPersonName(newName) {
+    this._name = newName;
   }
 }
 
-class Student extends Person {
-  constructor(name, age, place, grade) {
-    super(name, age, place);
-    this.occupation = "Student";
-    this.grade = grade;
-  }
-  sayDetails() {
-    console.log(
-      `Student's Name : ${this.name}, having grade : ${this.grade} and Occupation : ${this.occupation}.`
-    );
-  }
-}
-
-const person1 = new Person("Amit", 29, "Bihar");
+const person1 = new Person("Sonu Kumar", 27, "Bihar");
 console.log(person1);
-person1.sayDetails();
 
-const student1 = new Student("Prabir", 19, "Orissa", 95);
-console.log(student1);
-student1.sayDetails();
+console.log(person1.getPersonName);
+person1.setPersonName = "Amit Raj";
+console.log(person1.getPersonName);
+
+// --------------------------------------------------------------------
