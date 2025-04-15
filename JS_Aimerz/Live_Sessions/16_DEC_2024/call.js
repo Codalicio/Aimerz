@@ -52,3 +52,10 @@ const greetings = ["Hope you are good", "Hii"];
 person1.greet.apply(person3, greetings);
 
 // -----------------------------------------------------------------------------------
+
+// bind() method : store in a variable and call whenever needed!
+
+const person3Greet = person1.greet.bind(person3, ["Good evening"]);
+person3Greet();
+
+// --------------------------------------------------------------------------------------
