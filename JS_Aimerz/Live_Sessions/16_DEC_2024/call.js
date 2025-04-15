@@ -37,3 +37,18 @@ person1.greet("Hello");
 person1.greet.call(person2, "Good Morning");
 
 // -------------------------------------------------------------------------
+
+// apply method :
+
+// * If we want to pass the arguments of the reused function as an array then, we use the apply method :
+
+const person3 = {
+  name: "Surbhi",
+  age: 23,
+};
+
+const greetings = ["Hope you are good", "Hii"];
+
+person1.greet.apply(person3, greetings);
+
+// -----------------------------------------------------------------------------------
