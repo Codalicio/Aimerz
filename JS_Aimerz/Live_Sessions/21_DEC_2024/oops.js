@@ -18,42 +18,78 @@
 // -----------------------------------------------------------------------
 
 // Encapsulation :
+// class Person {
+//   constructor(name, age, place) {
+//     // Initializations
+//     this.name = name;
+//     this.age = age;
+//     this.place = place;
+//   }
+//   // Methods
+//   sayDetails() {
+//     console.log(
+//       `Person's name is : ${this.name}, aged : ${this.age}, from : ${this.place}.`
+//     );
+//   }
+// }
+
+// function sayBye() {
+//   console.log(`For the time being, Bye, ${this.name}`);
+// }
+
+// console.log(Person.prototype);
+// Person.prototype.sayByeBye = sayBye;
+// console.log(Person.prototype);
+
+// const amit = new Person("Amit Raj", 28, "Bihar");
+// console.log(amit);
+// amit.sayDetails();
+// console.log(amit.__proto__);
+// amit.sayByeBye();
+
+// const sumit = Object.create(amit);
+// console.log(sumit);
+// console.log(sumit.__proto__);
+// sumit.name = "Sumit";
+// sumit.age = 34;
+// sumit.place = "Bombay";
+// sumit.sayByeBye();
+// sumit.sayDetails();
+
+// --------------------------------------------------------------------
+
+// * Inheritance and Polymorphism :
 class Person {
-  constructor(name, age, place) {
-    // Initializations
+  constructor(name, age, place, occupation) {
     this.name = name;
     this.age = age;
     this.place = place;
+    this.occupation = "Unemployed";
   }
-  // Methods
   sayDetails() {
     console.log(
-      `Person's name is : ${this.name}, aged : ${this.age}, from : ${this.place}.`
+      `Name : ${this.name}, Age : ${this.age}, Place : ${this.place} and Occupation : ${this.occupation}.`
     );
   }
 }
 
-function sayBye() {
-  console.log(`For the time being, Bye, ${this.name}`);
+class Student extends Person {
+  constructor(name, age, place, grade) {
+    super(name, age, place);
+    this.occupation = "Student";
+    this.grade = grade;
+  }
+  sayDetails() {
+    console.log(
+      `Student's Name : ${this.name}, having grade : ${this.grade} and Occupation : ${this.occupation}.`
+    );
+  }
 }
 
-console.log(Person.prototype);
-Person.prototype.sayByeBye = sayBye;
-console.log(Person.prototype);
+const person1 = new Person("Amit", 29, "Bihar");
+console.log(person1);
+person1.sayDetails();
 
-const amit = new Person("Amit Raj", 28, "Bihar");
-console.log(amit);
-amit.sayDetails();
-console.log(amit.__proto__);
-amit.sayByeBye();
-
-const sumit = Object.create(amit);
-console.log(sumit);
-console.log(sumit.__proto__);
-sumit.name = "Sumit";
-sumit.age = 34;
-sumit.place = "Bombay";
-sumit.sayByeBye();
-sumit.sayDetails();
-
-// --------------------------------------------------------------------
+const student1 = new Student("Prabir", 19, "Orissa", 95);
+console.log(student1);
+student1.sayDetails();
