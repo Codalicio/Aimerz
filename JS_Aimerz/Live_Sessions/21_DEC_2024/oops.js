@@ -14,3 +14,46 @@
 // 3. Inheritance : Can be achieved by using extends keyword and super(). Suppose, there is a class 'Person' with name, age and place initialized inside its constructor function and we want to create an another class 'Student' that also has the same properties like name, age, place, with one exception, i.e., grade. So to avoid code duplication and also Student can inherit the properties of Person we will use the 'extends' keyword and use the class Person as Parent(just in Context) and inherit the similar properties using the super() method inside the constructor of the Student class and thus, it will avoid code duplication and also the methods of the parent(Person) will be made available to the child(Student) for use.
 
 // 4. Polymorphism : Same thing with different forms : We can achieve this by defining the same method inherited from the parent(Person) inside the child(Student) class with the desired modifications.
+
+// -----------------------------------------------------------------------
+
+// Encapsulation :
+class Person {
+  constructor(name, age, place) {
+    // Initializations
+    this.name = name;
+    this.age = age;
+    this.place = place;
+  }
+  // Methods
+  sayDetails() {
+    console.log(
+      `Person's name is : ${this.name}, aged : ${this.age}, from : ${this.place}.`
+    );
+  }
+}
+
+function sayBye() {
+  console.log(`For the time being, Bye, ${this.name}`);
+}
+
+console.log(Person.prototype);
+Person.prototype.sayByeBye = sayBye;
+console.log(Person.prototype);
+
+const amit = new Person("Amit Raj", 28, "Bihar");
+console.log(amit);
+amit.sayDetails();
+console.log(amit.__proto__);
+amit.sayByeBye();
+
+const sumit = Object.create(amit);
+console.log(sumit);
+console.log(sumit.__proto__);
+sumit.name = "Sumit";
+sumit.age = 34;
+sumit.place = "Bombay";
+sumit.sayByeBye();
+sumit.sayDetails();
+
+// --------------------------------------------------------------------
