@@ -1,0 +1,10 @@
+Question - 1 :
+
+* What is JavaScript?
+
+Answer :
+
+JavaScript (JS) is a versatile, high-level programming language primarily used for creating dynamic and interactive web content. It runs in the user's web browser for client-side scripting, anbling features like form validation and dynamic updates. JavaScript can also be used on the server-side with environments like Node.js. It is an interpreted language, meaning code is executed line-by-line. JavaScript supports event-driven, functional, and imperative programming styles. It is a core technology of the web, alongside HTML and CSS.
+
+-------------------------------------------------------------------------------------------------
+
