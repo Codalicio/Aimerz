@@ -24,10 +24,30 @@
 
 // -------------------------------------------------------------------
 
-function convertToNumber(str) {
-  let num = Number(str);
-  return Number.isNaN(num) ? NaN : num;
-}
+// function convertToNumber(str) {
+//   let num = Number(str);
+//   return Number.isNaN(num) ? NaN : num;
+// }
+
+// console.log(convertToNumber("123"));
+// console.log(convertToNumber("abc"));
+
+// ---------------------------------------------------------------------
+
+// const convertToNumber = function (str) {
+//   const num = +str;
+//   return Number.isNaN(num) ? NaN : num;
+// };
+
+// console.log(convertToNumber("123"));
+// console.log(convertToNumber("abc"));
+
+// --------------------------------------------------------------------
+
+const convertToNumber = (str) => {
+  const num = Number(str);
+  return isNaN(num) ? NaN : num;
+};
 
 console.log(convertToNumber("123"));
 console.log(convertToNumber("abc"));
