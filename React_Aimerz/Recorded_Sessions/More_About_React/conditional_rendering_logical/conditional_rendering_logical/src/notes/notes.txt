@@ -1,0 +1,1 @@
+* Conditional Rendering using Logical Operatrors is also known as Short Circuiting.
