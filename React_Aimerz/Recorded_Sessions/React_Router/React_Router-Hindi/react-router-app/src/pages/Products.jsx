@@ -1,8 +1,9 @@
-import { useParams, Link, useSearchParams } from "react-router";
+import { useParams, Link, useSearchParams, useNavigate } from "react-router";
 
 const Products = () => {
   const [searchParams] = useSearchParams();
   const params = useParams();
+  const navigate = useNavigate();
   const display = () => {
     if (params.category && searchParams.get("device")) {
       return (
@@ -18,7 +19,7 @@ const Products = () => {
   };
   return (
     <>
-      <div>
+      <div className="p-5">
         {display()}
         <Link to={"/products/mobile"} className="text-blue-700 underline">
           Go to Mobiles
@@ -40,6 +41,23 @@ const Products = () => {
             Go to Iphones
           </Link>
         )}
+        <br />
+        <button
+          onClick={() => {
+            navigate("./mobile");
+          }}
+          className="bg-red-900 text-white text-center rounded border-3 border-black p-2 cursor-pointer"
+        >
+          Go To Mobiles
+        </button>
+        <br />
+        <br />
+        <button
+          onClick={() => navigate(-1)}
+          className="bg-blue-900 text-white text-center rounded border-3 border-black p-2 cursor-pointer"
+        >
+          Go back
+        </button>
       </div>
     </>
   );
