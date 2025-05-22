@@ -1,0 +1,27 @@
+* Initially JavaScript was made to run only on the browsers to add some interactivity ton websites.
+
+* JavaScript was made only in 10 days.
+
+* To run JavaScript code on browsers, browsers have RunTime Environment, such as Google Chrome has "V8 Engine Runtime Environment", firefox has "Spider Monkey RuntimeTime Environment".
+
+* After its release, JavaScript was named as "Mocha", later it got changed to "LiveScript", and finally it got named as "JavaScript".
+
+* Features of JavaScript : 
+- Ease of use.
+- Cross-platform compatibility.
+- A large developer community.
+- Powerful capabilities.
+- Growing demand.
+
+* Application of JavaScript :
+* JavaScript can be used in various domains, such as :
+- Web Development
+- Web Applications
+- Server-Side Development
+- Game Development
+- Browser Extensions
+- Data Visualization
+- Real-time Applications
+- Automation
+
+* 
